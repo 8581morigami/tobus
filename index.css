@@ -1,0 +1,163 @@
+/* ヘッダー ここから */
+.header {
+  background-color: rgba(0, 100, 0, 1.0);
+  color: #fff;
+  height: 40px;
+  min-width: 700px;
+}
+
+.header-logo a {
+  float: left;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  padding: 1px 20px;
+}
+
+.header-list li {
+  float: right;
+  font-size: 0.7em;
+  padding: 0 17px;
+}
+
+.header-list_item a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  padding: 0 5px;
+}
+
+.header-list_item a:hover  {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  font-size: 0.5em;
+}
+/* ヘッダー ここまで */
+
+/* top-wrapper */
+.top-wrapper {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background: url(images/IMG_20201031_120722_2.jpg) no-repeat 0 0/cover;
+}
+
+h4 {
+  margin: 30px 0 0 0;
+}
+
+h2, p {
+  z-index: 1;
+  font-weight: bold;
+  color:#fff;
+  line-height: 0;
+}
+
+h2 {margin-top: 30px;}
+p {color: #dbebc4;}
+a {color: orange;}
+
+.overlay1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 50, 0, 0.6);
+}
+
+/* second-wrapper */
+main {
+  padding: 15px;
+  background-color: rgba(186, 220, 173, 0.3);
+  min-width: 670px;
+}
+
+.image_style {height:300px;}
+
+/* third-wrapper ast-wrapper　*/
+table {
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+caption {
+  text-align: right;
+  font-size: 0.5em;
+}
+
+td {
+  border: 1px solid lightgray;
+  font-size: 0.5em;
+  height: 15px;
+  padding: 0 1em;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+td.b {
+  color: rgba(0,0,0, 0.4);
+}
+
+td.c {
+  color: rgba(0,0,0, 0.4);
+  background-color: rgba(186, 220, 173, 0.3);
+}
+
+td.d {
+  background-color: rgba(186, 220, 173, 0.3);
+}
+
+.sticky_table_wrapper {
+  overflow: scroll;
+  width: calc(100vw - 8rem);
+  height: 50vh;
+}
+
+th {
+  background-color: rgba(186, 220, 173, 1.0);
+  border: 1px solid lightgray;
+  font-size: 0.7em;
+  height: 20px;
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+}
+
+tr td {
+  text-align: left;
+}
+
+/* フッター */
+footer {
+  font-size: 0.5em;
+  height:50px;
+  margin-bottom:10px;
+  background:#2f5167;
+  text-align:center;
+  color:#ffffff;
+  line-height:50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
