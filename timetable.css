@@ -1,0 +1,206 @@
+/* ヘッダー ここから */
+
+.header {
+  background-color: rgba(0, 100, 0, 1.0);
+  color: #fff;
+  height: 40px;
+  min-width: 700px;
+}
+
+.header-logo a {
+  float: left;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  padding: 1px 20px;
+}
+
+.header-list li {
+  float: right;
+  font-size: 0.7em;
+  padding: 0 17px;
+}
+
+.header-list_item a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  padding: 0 5px;
+}
+
+.header-list_item a:hover  {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  font-size: 0.5em;
+}
+
+/* ヘッダー ここまで */
+
+a {
+  font-size: 0.8em;
+}
+
+/* テーブル全体の設定 */
+
+.sticky_table_wrapper {
+  overflow: scroll;
+  width: calc(100vw - 2rem);
+  height: 30vh;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+th,td {
+  vertical-align: middle;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  text-align: center;
+  border-left: 0;
+  border-top: 0;
+}
+
+th {
+color: #333333;
+}
+
+/*　平日の表　*/
+
+.sticky_table_1 thead th {
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background-color: rgba(186,220,173,1);
+}
+
+.sticky_table_1 thead tr:nth-child(1) th {
+  top: 0;
+}
+.sticky_table_1 thead tr:nth-child(2) th {
+  top: 0.9rem; /* 2行目は1行目の高さの位置に固定する */
+}
+
+.sticky_table_1 th:first-child {
+  /* 横スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: rgba(186,220,173,1);
+}
+
+.sticky_table_1 thead th:first-child {
+  /* ヘッダー行内の他のセルより手前に表示する */
+  z-index: 2;
+}
+
+.sticky_table_1 {
+  border-collapse: collapse;
+}
+
+.sticky_table_1 tr:nth-child(odd) td {
+  background-color: rgba(186,220,173,0.2);
+}
+
+/*　土曜の表　*/
+
+.sticky_table_2 thead th {
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background-color: rgba(162,194,230,1);
+}
+
+.sticky_table_2 thead tr:nth-child(1) th {
+  top: 0;
+}
+.sticky_table_2 thead tr:nth-child(2) th {
+  top: 0.9rem; /* 2行目は1行目の高さの位置に固定する */
+}
+
+.sticky_table_2 th:first-child {
+  /* 横スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: rgba(162,194,230,1);
+}
+
+.sticky_table_2 thead th:first-child {
+  /* ヘッダー行内の他のセルより手前に表示する */
+  z-index: 2;
+}
+
+.sticky_table_2 {
+  border-collapse: collapse;
+}
+
+.sticky_table_2 tr:nth-child(odd) td {
+  background-color: rgba(162,194,230,0.2);
+}
+
+/*　祝日の表　*/
+
+.sticky_table_3 thead th {
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background-color: rgba(227,173,193,1);
+}
+
+.sticky_table_3 thead tr:nth-child(1) th {
+  top: 0;
+}
+.sticky_table_3 thead tr:nth-child(2) th {
+  top: 0.9rem; /* 2行目は1行目の高さの位置に固定する */
+}
+
+.sticky_table_3 th:first-child {
+  /* 横スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: rgba(227,173,193,1);
+}
+
+.sticky_table_3 thead th:first-child {
+  /* ヘッダー行内の他のセルより手前に表示する */
+  z-index: 2;
+}
+
+.sticky_table_3 {
+  border-collapse: collapse;
+}
+
+.sticky_table_3 tr:nth-child(odd) td {
+  background-color: rgba(227,173,193,0.2);
+}
+
+/* フッター */
+
+footer {
+  font-size: 0.5em;
+  height:50px;
+  margin-bottom:10px;
+  background:#2f5167;
+  text-align:center;
+  color:#ffffff;
+  line-height:50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
